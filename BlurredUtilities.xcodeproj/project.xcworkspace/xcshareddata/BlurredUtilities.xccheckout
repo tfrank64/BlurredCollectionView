@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B27E04B5-E965-40FD-BA4D-AF583A7F1BC3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BlurredUtilities</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>93DB6AC98184A1E0CB98A18AFE5E21E303F5FC59</key>
+		<string>github.com:tfrank64/BlurredUtilities.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BlurredUtilities.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>93DB6AC98184A1E0CB98A18AFE5E21E303F5FC59</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:tfrank64/BlurredUtilities.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>93DB6AC98184A1E0CB98A18AFE5E21E303F5FC59</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>93DB6AC98184A1E0CB98A18AFE5E21E303F5FC59</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BlurredUtilities</string>
+		</dict>
+	</array>
+</dict>
+</plist>

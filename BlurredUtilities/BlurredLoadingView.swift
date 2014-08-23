@@ -17,6 +17,8 @@ class BlurredLoadingView: UIView {
     var blurEffect: UIBlurEffect!
     var vibrancyView: UIVisualEffectView!
     
+    var smallView: UIView!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
 
@@ -36,6 +38,10 @@ class BlurredLoadingView: UIView {
         
         self.vibrancyView = vibrancyEffectView(forBlurEffectView: self.blurView)
         self.blurView.contentView.addSubview(self.vibrancyView)
+        
+        smallView = UIView(frame: CGRectMake(30, 30, 50, 50));
+        smallView.backgroundColor = UIColor.blueColor()
+        self.addSubview(smallView)
     }
     
     required init(coder aDecoder: NSCoder!) {
@@ -48,13 +54,16 @@ class BlurredLoadingView: UIView {
     func startAnimating() {
         
         isAnimating = true
-//        var scaleAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
-//        scaleAnimation.duration = 0.5
-//        scaleAnimation.repeatCount = 2000
-//        scaleAnimation.cumulative = true
-//        scaleAnimation.toValue = NSNumber(double: M_PI * 2.0 * 1 * 0.2)
-//        self.blurView.layer.addAnimation(scaleAnimation, forKey: "rotationAnimation")
-        UIView.animateWithDuration(NSTimeInterval(1), animations: { self.blurView.center = CGPointMake(0, 50) })
+        
+        
+        
+        
+        // var image = imageWithView(self.blurView)
+//        
+//        UIView.animateWithDuration(NSTimeInterval(2), delay: 0, options: UIViewAnimationOptions.Repeat | UIViewAnimationOptions.CurveLinear, animations:{
+//            self.smallView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
+//            //self.vibrancyView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
+//            }, completion: nil)
     }
     
     func stopAnimating() {
@@ -72,6 +81,17 @@ class BlurredLoadingView: UIView {
         return vibrancyView
     }
 
+    func imageWithView(view: UIView) -> UIImage
+    {
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);
+        view.layer.renderInContext(UIGraphicsGetCurrentContext())
+        var img = UIGraphicsGetImageFromCurrentImageContext();
+    
+        UIGraphicsEndImageContext();
+    
+        return img;
+    }
+    
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
