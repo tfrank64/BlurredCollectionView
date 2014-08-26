@@ -14,7 +14,7 @@ class BlurredCollectionViewCell: UICollectionViewCell {
     var blurEffect: UIBlurEffect!
     var vibrancyView: UIVisualEffectView!
     
-    required init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         // Randomly create a type of blur style
         self.setBlurView(arc4random() % 3)
