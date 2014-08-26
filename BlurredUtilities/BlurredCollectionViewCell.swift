@@ -14,15 +14,12 @@ class BlurredCollectionViewCell: UICollectionViewCell {
     var blurEffect: UIBlurEffect!
     var vibrancyView: UIVisualEffectView!
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
     required init(coder aDecoder: NSCoder!) {
         super.init(coder: aDecoder)
+        // Randomly create a type of blur style
         self.setBlurView(arc4random() % 3)
     }
-    // TODO: how to properly reuse cells
+
     override func prepareForReuse() {
         lightBlurView = nil
         blurEffect = nil
@@ -41,7 +38,7 @@ class BlurredCollectionViewCell: UICollectionViewCell {
 
         lightBlurView = UIVisualEffectView(effect: blurEffect)
         lightBlurView.userInteractionEnabled = false
-        lightBlurView.frame = CGRectMake(2.5, 0, 140, 140)//cell.frame
+        lightBlurView.frame = CGRectMake(2.5, 0, 140, 140)
         self.contentView.addSubview(lightBlurView)
         
         vibrancyView = vibrancyEffectView(forBlurEffectView: lightBlurView)
@@ -50,8 +47,10 @@ class BlurredCollectionViewCell: UICollectionViewCell {
     
     // Actually creates the desired blur effect
     func vibrancyEffectView(forBlurEffectView blurEffectView:UIVisualEffectView) -> UIVisualEffectView {
+        
         var vibrancy = UIVibrancyEffect(forBlurEffect: blurEffectView.effect as UIBlurEffect)
         var vibrancyView = UIVisualEffectView(effect: vibrancy)
+        
         vibrancyView.userInteractionEnabled = false
         vibrancyView.frame = blurEffectView.bounds
         vibrancyView.autoresizingMask = .FlexibleWidth | .FlexibleHeight

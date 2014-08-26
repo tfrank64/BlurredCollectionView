@@ -12,21 +12,12 @@ class BlurredViewController: UICollectionViewController {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
         var myself = UIImageView(frame: self.view.frame)
-        myself.image = UIImage(named: "profile.jpg")
-        myself.contentMode = UIViewContentMode.ScaleAspectFit
+        myself.image = UIImage(named: "skyiPhone.jpg")
+        myself.contentMode = UIViewContentMode.ScaleAspectFill
         self.collectionView.backgroundView = myself
         
-        var loadingHUD = BlurredLoadingView(frame: CGRectMake(self.view.frame.size.width/2 - 50, self.view.frame.size.height/2 - 50, 100, 100))
-        self.view.addSubview(loadingHUD)
-        loadingHUD.startAnimating()
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func collectionView(collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
@@ -39,7 +30,10 @@ class BlurredViewController: UICollectionViewController {
         return cell
     }
 
-
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
 }
 

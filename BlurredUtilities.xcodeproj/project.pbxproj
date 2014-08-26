@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B434FA719A26A4600BED692 /* BlurredLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B434FA619A26A4600BED692 /* BlurredLoadingView.swift */; };
 		6B50D94D19A15E420097BCDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B50D94C19A15E420097BCDF /* AppDelegate.swift */; };
 		6B50D94F19A15E420097BCDF /* BlurredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B50D94E19A15E420097BCDF /* BlurredViewController.swift */; };
 		6B50D95219A15E420097BCDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B50D95019A15E420097BCDF /* Main.storyboard */; };
 		6B50D95419A15E420097BCDF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B50D95319A15E420097BCDF /* Images.xcassets */; };
 		6B50D96019A15E420097BCDF /* BlurredUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B50D95F19A15E420097BCDF /* BlurredUtilitiesTests.swift */; };
 		6B50D96C19A1B5410097BCDF /* BlurredCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B50D96B19A1B5410097BCDF /* BlurredCollectionViewCell.swift */; };
-		6B61A2FB19A29A2E00FE5275 /* target.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B61A2FA19A29A2E00FE5275 /* target.jpg */; };
+		6BA119FA19AC38D900022D5A /* skyiPhone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BA119F919AC38D900022D5A /* skyiPhone.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +27,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6B434FA619A26A4600BED692 /* BlurredLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredLoadingView.swift; sourceTree = "<group>"; };
 		6B50D94719A15E420097BCDF /* BlurredUtilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlurredUtilities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B50D94B19A15E420097BCDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B50D94C19A15E420097BCDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +37,7 @@
 		6B50D95E19A15E420097BCDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B50D95F19A15E420097BCDF /* BlurredUtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredUtilitiesTests.swift; sourceTree = "<group>"; };
 		6B50D96B19A1B5410097BCDF /* BlurredCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredCollectionViewCell.swift; sourceTree = "<group>"; };
-		6B61A2FA19A29A2E00FE5275 /* target.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = target.jpg; sourceTree = "<group>"; };
+		6BA119F919AC38D900022D5A /* skyiPhone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skyiPhone.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +79,13 @@
 		6B50D94919A15E420097BCDF /* BlurredUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				6B61A2FA19A29A2E00FE5275 /* target.jpg */,
 				6B50D94C19A15E420097BCDF /* AppDelegate.swift */,
-				6B50D94E19A15E420097BCDF /* BlurredViewController.swift */,
-				6B50D95019A15E420097BCDF /* Main.storyboard */,
-				6B50D95319A15E420097BCDF /* Images.xcassets */,
-				6B50D94A19A15E420097BCDF /* Supporting Files */,
 				6B50D96B19A1B5410097BCDF /* BlurredCollectionViewCell.swift */,
-				6B434FA619A26A4600BED692 /* BlurredLoadingView.swift */,
+				6B50D94E19A15E420097BCDF /* BlurredViewController.swift */,
+				6B50D95319A15E420097BCDF /* Images.xcassets */,
+				6B50D95019A15E420097BCDF /* Main.storyboard */,
+				6BA119F919AC38D900022D5A /* skyiPhone.jpg */,
+				6B50D94A19A15E420097BCDF /* Supporting Files */,
 			);
 			path = BlurredUtilities;
 			sourceTree = "<group>";
@@ -198,9 +195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B61A2FB19A29A2E00FE5275 /* target.jpg in Resources */,
 				6B50D95219A15E420097BCDF /* Main.storyboard in Resources */,
 				6B50D95419A15E420097BCDF /* Images.xcassets in Resources */,
+				6BA119FA19AC38D900022D5A /* skyiPhone.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +215,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B434FA719A26A4600BED692 /* BlurredLoadingView.swift in Sources */,
 				6B50D96C19A1B5410097BCDF /* BlurredCollectionViewCell.swift in Sources */,
 				6B50D94F19A15E420097BCDF /* BlurredViewController.swift in Sources */,
 				6B50D94D19A15E420097BCDF /* AppDelegate.swift in Sources */,
